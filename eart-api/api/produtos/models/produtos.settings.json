@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produtos",
+  "info": {
+    "name": "Produtos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "preco": {
+      "type": "decimal"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "vendedore": {
+      "via": "produtos",
+      "model": "vendedores"
+    }
+  }
+}

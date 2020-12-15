@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendedores",
+  "info": {
+    "name": "vendedores",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "telefone": {
+      "type": "integer"
+    },
+    "nascimento": {
+      "type": "date"
+    },
+    "cpf": {
+      "type": "integer"
+    },
+    "produtos": {
+      "collection": "produtos",
+      "via": "vendedore"
+    }
+  }
+}
